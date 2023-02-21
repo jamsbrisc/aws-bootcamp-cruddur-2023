@@ -1,7 +1,7 @@
 # Week 0 — Billing and Architecture
 
 This week encompassed multiple topics including architecture, cloud services, the Well-Architected Framework, budgets and billing, utilizing the CLI/scripting, and IAM. I ran into a few issues with this week's required assignments; however, the homework challenge went smoothly.
-For the challenge I added MFA and created an IAM user. I also created the conceptual and logical diagram - these were both recreations to become acquiainted with Lucid Charts and do not significantly differ from the provided examples. Please see links:
+For the challenge I added MFA and created an IAM user. I also created the conceptual and logical diagram - these were both recreations to become acquainted with Lucid Charts and do not significantly differ from the provided examples. Please see links:
 
 **Conceptual**:
 
@@ -24,14 +24,14 @@ Regarding issues that I encountered:
 
 ![Week0_IssueGitPod](https://user-images.githubusercontent.com/125226013/220479657-4a4b4766-5940-4167-b5a2-23e562dc11fc.png)
 
-3) Within the pricing video instructions, I found that my AWS account currently did not list "Billing" as a metric. I ended up going directly to the billing section under alerts. Once clicked, the subsequent screen was similar to the example provided by Chirag (i.e. displaying a similar "Specify metric and conditions" and Namespace "AWS/Billing"). I was also able to specify the dollar amount threshold of $10 and create the noted alerts that shows in "All Alerts".
+3) Within the pricing video instructions, I found that my AWS account currently did not list "Billing" as a metric. I ended up going directly to the billing section under alerts. Once clicked, the subsequent screen was similar to the example provided by Chirag (i.e. displaying a similar "Specify metric and conditions" and Namespace "AWS/Billing"). I was also able to specify the dollar amount threshold of $10 and create the noted alerts that display in "All Alerts".
 
 ![Week0_Metrics Issue ](https://user-images.githubusercontent.com/125226013/220480201-2898d4ff-ee81-4fcd-994f-4f4e4b88450e.png)
 
 
 ![Week0_Billing Alert](https://user-images.githubusercontent.com/125226013/220480663-f93fb19a-1c21-4833-a566-f8a05b11147d.png)
 
-4) Finally - not as much of an issue, but a curiousity. I didn't have VSC so I ended up downloading the toold so I could edit and save the svg. I also wanted to to see if the xml was indeed the trigger to get the Momento image to work in Lucid charts. I ended up editing the code purely adding the xml (w/ no other adjustments) and was unable to generate the image (still received the checkerboard). I then proceeded to edit the code and save according to the suggestions (1 at a time) to find that the culprit was Fill="currentColor". In my momento.svg version I retained all the original code with the exception of fill-current color and the image populated successfully. It did appear a bit pixelated - not sure if removing the other code (width/height) would correct, but that will be an item to investiagte at a later time when I am more familiar. 
+4) Finally - not as much of an issue, but a curiosity. I didn't have VSC so I ended up downloading the tool so I could edit and save the svg. I also wanted to see if the xml was indeed the trigger to get the Momento image to work in Lucid charts. I ended up editing the code purely adding the xml (w/ no other adjustments) and was unable to generate the image (still received the checkerboard). I then proceeded to edit the code and save according to the suggestions (1 at a time) to find that the culprit was Fill="currentColor". In my momento.svg version I retained all the original code with the exception of fill-current color and the image populated successfully. It did appear a bit pixelated - not sure if removing the other code (width/height) would correct, but that will be an item to investigate at a later time when I am more familiar. 
 
 ![Week0_Lucidsvg](https://user-images.githubusercontent.com/125226013/220481719-7bad7708-4d12-4e68-b5b0-8519b0d97909.png)
 
