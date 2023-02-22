@@ -24,7 +24,7 @@ Regarding issues that I encountered:
 
 ![Week0_IssueGitPod](https://user-images.githubusercontent.com/125226013/220479657-4a4b4766-5940-4167-b5a2-23e562dc11fc.png)
 
-3) Within the pricing video instructions, I found that my AWS account currently did not list "Billing" as a metric. I ended up going directly to the billing section under alerts. Once clicked, the subsequent screen was similar to the example provided by Chirag (i.e. displaying a similar "Specify metric and conditions" and Namespace "AWS/Billing"). I was also able to specify the dollar amount threshold of $10 and create the noted alerts that display in "All Alerts".
+3) Within the pricing video instructions, I found that my AWS account did not list "Billing" as a metric. I ended up going directly to the billing section under alerts. Once clicked, the subsequent screen was similar to the example provided by Chirag (i.e. displaying a similar "Specify metric and conditions" and Namespace "AWS/Billing"). I was also able to specify the dollar amount threshold of $10 and create the noted alerts that display in "All Alerts".
 
 ![Week0_Metrics Issue ](https://user-images.githubusercontent.com/125226013/220480201-2898d4ff-ee81-4fcd-994f-4f4e4b88450e.png)
 
