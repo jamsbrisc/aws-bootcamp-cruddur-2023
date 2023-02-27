@@ -4,6 +4,7 @@ from flask_cors import CORS, cross_origin
 import os
 
 from services.home_activities import *
+from services.notifications_activities import *
 from services.user_activities import *
 from services.create_activity import *
 from services.create_reply import *
@@ -14,6 +15,7 @@ from services.create_message import *
 from services.show_activity import *
 
 app = Flask(__name__)
+# below is to get environment variables into the application
 frontend = os.getenv('FRONTEND_URL')
 backend = os.getenv('BACKEND_URL')
 origins = [frontend, backend]
@@ -26,6 +28,7 @@ cors = CORS(
 )
 
 @app.route("/api/message_groups", methods=['GET'])
+# define routes for a flask app 
 def data_message_groups():
   user_handle  = 'andrewbrown'
   model = MessageGroups.run(user_handle=user_handle)
@@ -63,6 +66,11 @@ def data_create_message():
 @app.route("/api/activities/home", methods=['GET'])
 def data_home():
   data = HomeActivities.run()
+  return data, 200
+
+@app.route("/api/activities/notifications", methods=['GET'])
+def data_notifications():
+  data = NotificationsActivities.run()
   return data, 200
 
 @app.route("/api/activities/@<string:handle>", methods=['GET'])
