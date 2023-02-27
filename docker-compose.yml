@@ -39,14 +39,13 @@ services:
       - '5432:5432'
     volumes: 
       - db:/var/lib/postgresql/data
-volumes:
-  db:
-    driver: local
-
 # the name flag is a hack to change the default prepend folder
 # name when outputting the image names
 networks: 
   internal-network:
     driver: bridge
     name: cruddur
+volumes:
+  db:
+    driver: local
 #referencing the volume above db:/var...and local means we are storing the db locally on this machine
